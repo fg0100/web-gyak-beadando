@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Prog Gyak Beadandó</title>
+
+    <link rel="stylesheet" href="Assets/Styles/main.css">
+    <link rel="stylesheet" href="Assets/Styles/header-footer.css">
+    <link rel="stylesheet" href="Assets/Styles/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="Assets/Scripts/form-validation.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="Assets/Images/ball4.png" alt="ball" width="50px">
+        <h1>Web Prog Gyak Beadandó</h1>
+        <nav>
+            <a href="kezdooldal.html">Kezdőoldal</a>
+            <a href="tortenelem.html">Történelem</a>
+            <a href="tornak.html">Nemzetközi Futballtornák</a>
+            <a href="legendak.html">Legendák</a>
+            <a href="form.html">Űrlap</a>
+        </nav>
+    </header>
+    <main>
+        <section class="vertical-section" style="width: 50%;">
+            <img src="Assets/Images/player2.png" alt="player" width="100px">
+            <h2>Űrlap</h2>
+            <form>
+                <fieldset>
+                    <legend>Ellenőrzött űrlap</legend>
+                    <label for="name">Teljes név</label>
+                    <input required type="text" id="name" name="name" placeholder="Nagy János">
+
+                    <label for="gender">Nem</label>
+                    <select required id="gender" name="gender">
+                        <option value="choose" disabled selected>-- válassz --</option>
+                        <option value="male">Férfi</option>
+                        <option value="female">Nő</option>
+                    </select>
+
+                    <label for="favteam">Melyik a kedvenc csapata az alabbiak közül?</label>
+                    <select required id="favteam" name="favteam" >
+                        <option value="choose" disabled selected>-- válassz --</option>
+                        <option value="RMA">Real Madrid</option>
+                        <option value="MCI">Manchester City</option>
+                        <option value="B04">Bayer Leverkusen</option>
+                        <option value="ARS">Arsenal</option>
+                        <option value="LIV">Liverpool</option>
+                        <option value="BAR">Barcelona</option>
+                        <option value="FCB">Bayern München</option>
+                        <option value="INT">Inter Milan</option>
+                        <option value="PSG">Paris Saint-Germain</option>
+                        <option value="ATM">Atlético Madrid</option>
+                        <option value="BVB">Borussia Dortmund</option>
+                        <option value="ATA">Atalanta</option>
+                        <option value="ACM">AC Milan</option>
+                        <option value="RBL">RB Leipzig</option>
+                        <option value="PSV">PSV Eindhoven</option>
+                        <option value="ROM">AS Roma</option>
+                        <option value="SCP">Sporting CP</option>
+                        <option value="AVL">Aston Villa</option>
+                        <option value="RSO">Real Sociedad</option>
+                        <option value="LAZ">Lazio</option>
+                        <option value="GIR">Girona</option>
+                        <option value="POR">FC Porto</option>
+                        <option value="VFB">VfB Stuttgart</option>
+                        <option value="MUN">Manchester United</option>
+                        <option value="FEY">Feyenoord</option>
+                        <option value="BEN">Benfica</option>
+                        <option value="WHU">West Ham United</option>
+                        <option value="JUV">Juventus</option>
+                        <option value="NEW">Newcastle United</option>
+                        <option value="ATH">Athletic Bilbao</option>
+                        <option value="CHE">Chelsea</option>
+                        <option value="FIO">Fiorentina</option>
+                        <option value="TOT">Tottenham Hotspur</option>
+                        <option value="BHA">Brighton & Hove Albion</option>
+                        <option value="USG">Union Saint-Gilloise</option>
+                        <option value="NAP">Napoli</option>
+                        <option value="VIL">Villarreal</option>
+                        <option value="BOL">Bologna</option>
+                        <option value="GAL">Galatasaray</option>
+                        <option value="OM">Olympique de Marseille</option>
+                        <option value="LIL">Lille</option>
+                        <option value="FEN">Fenerbahçe</option>
+                        <option value="MON">AS Monaco</option>
+                        <option value="RAN">Rangers</option>
+                        <option value="BET">Real Betis</option>
+                        <option value="LEN">RC Lens</option>
+                        <option value="SCF">SC Freiburg</option>
+                        <option value="BRA">Sporting Braga</option>
+                        <option value="REN">Stade Rennais</option>
+                        <option value="CEL">Celtic</option>
+                      </select>
+
+                      <label for="favplayer">Melyik a kedvenc játékosa az alabbiak közül?</label>
+                      <select required id="favplayer" name="favplayer" >
+                        <option value="choose" disabled selected>-- válassz --</option>
+                         <option value="CR7">Cristiano Ronaldo</option>
+                         <option value="LM10">Lionel Messi</option>
+                        <option value="DM10">Diego Maradona</option>
+                        <option value="PE10">Pelé</option>
+                        <option value="ZZ5">Zinedine Zidane</option>
+                        <option value="JC14">Johan Cruyff</option>
+                        <option value="GB7">George Best</option>
+                        <option value="FB5">Franz Beckenbauer</option>
+                        <option value="FP10">Ferenc Puskás</option>
+                        <option value="RN9">Ronaldo Nazário</option>
+                        <option value="GM13">Gerd Müller</option>
+                        <option value="ADS9">Alfredo Di Stéfano</option>
+                        <option value="MP10">Michel Platini</option>
+                        <option value="ZI10">Zico</option>
+                        <option value="GA7">Garrincha</option>
+                        <option value="BC9">Bobby Charlton</option>
+                        <option value="PM3">Paolo Maldini</option>
+                        <option value="RO11">Romário</option>
+                        <option value="GM9">Giuseppe Meazza</option>
+                        <option value="AI8">Andrés Iniesta</option>
+                        <option value="FB6">Franco Baresi</option>
+                        <option value="MVB9">Marco van Basten</option>
+                        <option value="EU10">Eusébio</option>
+                        <option value="XA6">Xavi</option>
+                        <option value="CA4">Carlos Alberto</option>
+                        <option value="RO10">Ronaldinho</option>
+                        <option value="RG8">Ruud Gullit</option>
+                        <option value="MN1">Manuel Neuer</option>
+                        <option value="SO8">Sócrates</option>
+                        <option value="RK10">Raymond Kopa</option>
+                        <option value="LY1">Lev Yashin</option>
+                        <option value="LM8">Lothar Matthäus</option>
+                        <option value="SM7">Stanley Matthews</option>
+                        <option value="VM10">Valentino Mazzola</option>
+                        <option value="MS10">Matthias Sindelar</option>
+                        <option value="LS9">Luis Suárez (1935)</option>
+                        <option value="FG11">Francisco Gento</option>
+                        <option value="BM6">Bobby Moore</option>
+                        <option value="ML10">Michael Laudrup</option>
+                        <option value="RB10">Roberto Baggio</option>
+                        <option value="KD7">Kenny Dalglish</option>
+                        <option value="PR9">Paolo Rossi</option>
+                        <option value="NH9">Nándor Hidegkuti</option>
+                        <option value="GN10">Günter Netzer</option>
+                        <option value="GB1">Gianluigi Buffon</option>
+                        <option value="DI6">Didi</option>
+                        <option value="RI11">Rivellino</option>
+                        <option value="KK7">Kevin Keegan</option>
+                        <option value="TH14">Thierry Henry</option>
+                        <option value="NS6">Nilton Santos</option>
+                        <option value="JMM10">José Manuel Moreno</option>
+                        <option value="OB11">Oleg Blokhin</option>
+                        <option value="JA7">Jairzinho</option>
+                        <option value="GS6">Gaetano Scirea</option>
+                        <option value="DZ1">Dino Zoff</option>
+                        <option value="JAS10">Juan Alberto Schiaffino</option>
+                        <option value="FW10">Fritz Walter</option>
+                        <option value="DP6">Daniel Passarella</option>
+                        <option value="GB1">Gordon Banks</option>
+                        <option value="GR10">Gianni Rivera</option>
+                        <option value="KHR11">Karl-Heinz Rummenigge</option>
+                        <option value="JC9">John Charles</option>
+                        <option value="DD9">Dixie Dean</option>
+                        <option value="GN9">Gunnar Nordahl</option>
+                        <option value="JN10">Johan Neeskens</option>
+                        <option value="DL10">Denis Law</option>
+                        <option value="SM10">Sandro Mazzola</option>
+                        <option value="DB10">Dennis Bergkamp</option>
+                        <option value="JJ7">Jimmy Johnstone</option>
+                        <option value="RK4">Ronald Koeman</option>
+                        <option value="OS10">Omar Sívori</option>
+                        <option value="TC10">Teófilo Cubillas</option>
+                        <option value="DA2">Dani Alves</option>
+                        <option value="EC7">Eric Cantona</option>
+                        <option value="JA10">José Andrade</option>
+                        <option value="CA2">Cafu</option>
+                        <option value="FR10">Frank Rijkaard</option>
+                        <option value="FA10">Flórián Albert</option>
+                        <option value="LM10">Luka Modrić</option>
+                        <option value="JF10">Just Fontaine</option>
+                        <option value="JM10">Josef Masopust</option>
+                        <option value="JG9">Jimmy Greaves</option>
+                        <option value="HS9">Hugo Sánchez</option>
+                        <option value="WR10">Wayne Rooney</option>
+                        <option value="PL21">Philipp Lahm</option>
+                        <option value="AS9">Alan Shearer</option>
+                        <option value="AS10">Allan Simonsen</option>
+                        <option value="SB5">Sergio Busquets</option>
+                        <option value="HS8">Hristo Stoichkov</option>
+                        <option value="RC3">Roberto Carlos</option>
+                        <option value="GF3">Giacinto Facchetti</option>
+                        <option value="PS1">Peter Schmeichel</option>
+                        <option value="SK8">Sándor Kocsis</option>
+                        <option value="LF7">Luís Figo</option>
+                        <option value="DS4">Djalma Santos</option>
+                        <option value="JZ4">Javier Zanetti</option>
+
+
+                    <label for="email">Email</label>
+                    <input required type="email" id="email" name="email" placeholder="valaki@valami.hu">
+
+                    
+                        <input type="button" value="OK" onclick="validate()">
+                </fieldset>
+            </form>
+        </section>
+        <section class="vertical-section">
+            <h2>Adatok</h2>
+            <table id="data-table">
+                <tr>
+                    <th>Teljes név</th>
+                    <th>Email</th>
+                    <th>Nem</th>
+                    <th>Kedvenc csapat</th>
+                    <th>Kedvenc játékos</th>
+                    <th></th>
+                </tr>
+              
+            </table>
+        </section>
+    </main>
+    <footer>
+        <h1>Szerzők</h1>
+        <div class="creator-container">
+            <p class="creator-name">Versics Ádám</p>
+            <p class="creator-code">NZXW18</p>
+        </div>
+        <div class="creator-container">
+            <p class="creator-name">Juhász Dávid</p>
+            <p class="creator-code">FPMHJ4</p>
+        </div>
+    </footer>
+
+    <dialog id="error-dialog">
+        <h3 class="dialog-title">Error</h3>
+        <p id="dialog-msg"></p>
+        <button onclick="closeDialog()">OK</button>
+    </dialog>
+</body>
+
+</html>

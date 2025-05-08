@@ -1,2 +1,2 @@
-# web-gyak-beadando
-web programozás I beadandó feladat
+Versics Ádám NZXW18
+Juhász Dávid FPMHJ4

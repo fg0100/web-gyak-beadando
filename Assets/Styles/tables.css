@@ -1,0 +1,56 @@
+body {
+  background-color: var(--background);
+  font-family: Arial, sans-serif;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+caption {
+  caption-side: top;
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 20px;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 16px;
+  margin: 0 auto;
+}
+
+td.cell-border {
+  width: 200px;
+  height: 100px;
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  background-color: rgba(2, 51, 59, 0.1);
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+td.cell-border:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.year {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.country-name {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
